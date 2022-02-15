@@ -1,0 +1,53 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "Javascript Online",
+          "price": 10.99,
+          "image": { "fields": { "file": { "url": "./images/product-1.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": ".NET Online",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "./images/product-2.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "Teknisk testare Online",
+          "price": 12.99,
+          "image": { "fields": { "file": { "url": "./images/product-3.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "UX-Design Online",
+          "price": 22.99,
+          "image": { "fields": { "file": { "url": "./images/product-4.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "Apputvecklare Online",
+          "price": 88.99,
+          "image": { "fields": { "file": { "url": "./images/product-5.jpg" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "AI Developer",
+          "price": 32.99,
+          "image": { "fields": { "file": { "url": "./images/product-6.jpg" } } }
+        }
+      }
+
+    ]
+  }
