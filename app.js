@@ -1,9 +1,8 @@
-
 const client = contentful.createClient({
   // This is the space ID. A space is like a project folder in Contentful terms
   space: "xm6pcrvcn0ua",
   // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-  accessToken: "93pUEBjsku2wAKJ-mAjl6lWYRlH2y-rPPv5dOPkWQRU",
+  accessToken: "PL5y3tAw2bbF20bf9qzFkztKnO_h1oz9M_HVuIl3-5s",
 });
 
 //variables
@@ -27,7 +26,7 @@ class Product {
   async getProducts() {
     try {
       let contentful = await client.getEntries({
-        content_type: "westCoastEducation"
+        content_type: "westCoastEducation",
       });
       console.log(contentful);
 
@@ -35,10 +34,11 @@ class Product {
       // let data = await result.json();
       let products = contentful.items;
       products = products.map((item) => {
-        const { title, price } = item.fields;
+        const { title, price, beskrivning, startDatum, slutDatum } =
+          item.fields;
         const { id } = item.sys;
         const image = item.fields.image.fields.file.url;
-        return { title, price, id, image };
+        return { title, price, id, image, beskrivning, startDatum, slutDatum };
       });
       return products;
     } catch (error) {
@@ -65,6 +65,9 @@ class UI {
         </button>
       </div>
       <h3>${product.title}</h3>
+      <p>${product.beskrivning}</p>
+      <time datetime>${product.startDatum} -</time datetime>
+      <time datetime>${product.slutDatum}</time datetime>
       <h4>${product.price}kr</h4>
     </article>
     <!-- /single product -->
@@ -125,6 +128,10 @@ class UI {
   <img src=${item.image} alt="product">
           <div>
             <h4>${item.title}</h4>
+            <h4>${item.beskrivning}</h4>
+    <p>${product.beskrivning}</p>
+      <time datetime>${product.startDatum} -</time datetime>
+      <time datetime>${product.slutDatum}</time datetime>
             <h5>${item.price}kr</h5>
             <span class="remove-item" data-id =${item.id}>ta bort produkt</span>
           </div>

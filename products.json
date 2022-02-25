@@ -5,6 +5,7 @@
         "fields": {
           "title": "Javascript Online",
           "price": 10.99,
+          "description": "this is for",
           "image": { "fields": { "file": { "url": "./images/product-1.jpg" } } }
         }
       },
