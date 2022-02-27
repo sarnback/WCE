@@ -55,6 +55,10 @@ body {
   border-radius: 30%;
   color: var(--mainWhite);
 }
+.nav-bar-about{
+  text-decoration: none;
+  color: var(--mainBlack);
+}
 /* --------------- End of Navbar ---------------- */
 /* --------------- Hero ---------------- */
 .hero {
@@ -93,6 +97,61 @@ body {
   color: var(--primaryColor);
 }
 /* --------------- End of Hero ---------------- */
+/* --------------- Hero About---------------- */
+.hero-about {
+  min-height: calc(100vh - 60px);
+  background: url("images/school.jpg") center/cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 2rem;
+}
+.banner-title {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 3rem;
+}
+.banner-btn {
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  font-size: 1rem;
+  background: var(--primaryColor);
+  color: var(--mainBlack);
+  border: 1px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.banner-btn:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+/* --------------- End of Hero-About ---------------- */
+/*---------------- About us --------------------*/
+.about{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 1em;
+}
+.about-text{
+    text-align: center;
+  
+  margin-bottom: 5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 5em;
+}
+/*---------------- end of About us --------------------*/
 /* --------------- Products ---------------- */
 
 .products {
