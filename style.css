@@ -263,5 +263,13 @@ body {
 
 /* --------------- End of Cart ---------------- */
 /* --------------- Footer --------------------- */
+.footer-div{
+  text-align: center;
+  height: 3em;
+  background: rgb(219, 218, 218);
 
+}
+.copyright{
+  padding-top: 1em;
+}
   /* --------------- End of Footer ---------------- */
