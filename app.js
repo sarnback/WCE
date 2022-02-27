@@ -128,10 +128,6 @@ class UI {
   <img src=${item.image} alt="product">
           <div>
             <h4>${item.title}</h4>
-            <h4>${item.beskrivning}</h4>
-    <p>${product.beskrivning}</p>
-      <time datetime>${product.startDatum} -</time datetime>
-      <time datetime>${product.slutDatum}</time datetime>
             <h5>${item.price}kr</h5>
             <span class="remove-item" data-id =${item.id}>ta bort produkt</span>
           </div>
